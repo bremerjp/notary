@@ -53,7 +53,13 @@
                   placeholder="Search for..."
                 />
                 <span class="input-group-btn"
-                  ><button class="btn btn-secondary">Search</button></span
+                  ><button
+                    class="btn btn-secondary"
+                    type="button"
+                    onclick="performMark()"
+                  >
+                    Search
+                  </button></span
                 >
               </div>
             </div>
@@ -86,13 +92,6 @@
                         >Alice in Wonderland</a
                       >
                     </li>
-                    <li>
-                      <a
-                        href="#"
-                        onclick="loadBook('JekyllAndHyde.txt', 'Dr. Jekyll and Mr. Hyde')"
-                        >Dr. Jekyll and Mr. Hyde</a
-                      >
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -121,16 +120,11 @@
           <div class="card my-4">
             <h5 class="card-header">Document Stats</h5>
             <div class="card-body">
-              
-                
-                  <ul class="list-unstyled mb-0" id="mostUsed">
-                    <li id="docLength"></li>
-                    <li id="wordCount"></li>
-                    <li id="charCount"></li>
-
-                  </ul>
-                
-              
+              <ul class="list-unstyled mb-0">
+                <li id="docLength"></li>
+                <li id="wordCount"></li>
+                <li id="charCount"></li>
+              </ul>
             </div>
           </div>
         </div>
